@@ -21,6 +21,10 @@
 		9E0D197B18A03F0500F7CFDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0D195D18A03F0500F7CFDC /* UIKit.framework */; };
 		9E0D198318A03F0500F7CFDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E0D198118A03F0500F7CFDC /* InfoPlist.strings */; };
 		9E0D198518A03F0500F7CFDC /* InstagramCloneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D198418A03F0500F7CFDC /* InstagramCloneTests.m */; };
+		9E0D199018A0420F00F7CFDC /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D198F18A0420F00F7CFDC /* FeedViewController.m */; };
+		9E0D199318A0421F00F7CFDC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D199218A0421F00F7CFDC /* SearchViewController.m */; };
+		9E0D199618A0422C00F7CFDC /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D199518A0422C00F7CFDC /* CameraViewController.m */; };
+		9E0D199918A0423B00F7CFDC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D199818A0423B00F7CFDC /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		9E0D198018A03F0500F7CFDC /* InstagramCloneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstagramCloneTests-Info.plist"; sourceTree = "<group>"; };
 		9E0D198218A03F0500F7CFDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E0D198418A03F0500F7CFDC /* InstagramCloneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramCloneTests.m; sourceTree = "<group>"; };
+		9E0D198E18A0420F00F7CFDC /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		9E0D198F18A0420F00F7CFDC /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		9E0D199118A0421F00F7CFDC /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9E0D199218A0421F00F7CFDC /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9E0D199418A0422C00F7CFDC /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		9E0D199518A0422C00F7CFDC /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		9E0D199718A0423B00F7CFDC /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		9E0D199818A0423B00F7CFDC /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,14 @@
 				9E0D196818A03F0500F7CFDC /* AppDelegate.h */,
 				9E0D196918A03F0500F7CFDC /* AppDelegate.m */,
 				9E0D196B18A03F0500F7CFDC /* Main.storyboard */,
+				9E0D198E18A0420F00F7CFDC /* FeedViewController.h */,
+				9E0D198F18A0420F00F7CFDC /* FeedViewController.m */,
+				9E0D199118A0421F00F7CFDC /* SearchViewController.h */,
+				9E0D199218A0421F00F7CFDC /* SearchViewController.m */,
+				9E0D199418A0422C00F7CFDC /* CameraViewController.h */,
+				9E0D199518A0422C00F7CFDC /* CameraViewController.m */,
+				9E0D199718A0423B00F7CFDC /* ProfileViewController.h */,
+				9E0D199818A0423B00F7CFDC /* ProfileViewController.m */,
 				9E0D196E18A03F0500F7CFDC /* ViewController.h */,
 				9E0D196F18A03F0500F7CFDC /* ViewController.m */,
 				9E0D197118A03F0500F7CFDC /* Images.xcassets */,
@@ -251,6 +271,10 @@
 			files = (
 				9E0D197018A03F0500F7CFDC /* ViewController.m in Sources */,
 				9E0D196A18A03F0500F7CFDC /* AppDelegate.m in Sources */,
+				9E0D199318A0421F00F7CFDC /* SearchViewController.m in Sources */,
+				9E0D199618A0422C00F7CFDC /* CameraViewController.m in Sources */,
+				9E0D199918A0423B00F7CFDC /* ProfileViewController.m in Sources */,
+				9E0D199018A0420F00F7CFDC /* FeedViewController.m in Sources */,
 				9E0D196618A03F0500F7CFDC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
