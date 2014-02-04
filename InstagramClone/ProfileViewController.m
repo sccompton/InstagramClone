@@ -10,29 +10,31 @@
 
 @interface ProfileViewController ()
 
+{
+    
+    __weak IBOutlet UIImageView *userProfileImage;
+    __weak IBOutlet UILabel *userNameLabel;
+    
+}
+
 @end
 
 @implementation ProfileViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    
 }
 
-- (void)didReceiveMemoryWarning
+
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:YES];
+   // userNameLabel.text = user.name;
+    
+    
 }
 
 @end
