@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Fzn-9E-vbc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Fzn-9E-vbc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Master View Controller - Feed-->
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TDR-XQ-Gvj">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TDR-XQ-Gvj" customClass="CustomPFTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TDR-XQ-Gvj" id="aDx-vU-MvQ">
@@ -45,7 +45,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKH-51-dfk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKH-51-dfk" customClass="PFImageView">
                                 <rect key="frame" x="20" y="20" width="101" height="101"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,7 +73,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" id="G8N-s4-YLl"/>
                     <connections>
                         <outlet property="userNameLabel" destination="f2t-rB-ulq" id="W4O-hN-OU0"/>
-                        <outlet property="userProfileImage" destination="qKH-51-dfk" id="fRm-7M-dRG"/>
+                        <outlet property="userProfileImage" destination="qKH-51-dfk" id="W18-7S-YEY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAP-N5-RHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,8 +146,9 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Fzn-9E-vbc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="gey-So-8Qp">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="gey-So-8Qp">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -170,9 +171,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="sTV-Ix-eeg">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="4qg-Qg-pKO" id="ue6-kL-k97"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nOx-ej-MXP">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nOx-ej-MXP" id="suD-M9-6KQ">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -186,8 +195,21 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Search" id="kAC-VY-x9M"/>
+                    <connections>
+                        <outlet property="searchBar" destination="sTV-Ix-eeg" id="UWg-DL-FQ4"/>
+                        <outlet property="searchDisplayController" destination="uDQ-Wf-4ab" id="u1F-Y1-ulT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaE-Nh-rhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="uDQ-Wf-4ab">
+                    <connections>
+                        <outlet property="delegate" destination="4qg-Qg-pKO" id="Jfo-xH-Es6"/>
+                        <outlet property="searchBar" destination="sTV-Ix-eeg" id="bcX-gt-Q8g"/>
+                        <outlet property="searchContentsController" destination="4qg-Qg-pKO" id="40w-Mk-BEA"/>
+                        <outlet property="searchResultsDataSource" destination="4qg-Qg-pKO" id="qVT-rh-O90"/>
+                        <outlet property="searchResultsDelegate" destination="4qg-Qg-pKO" id="hud-jK-OZp"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="598" y="-154"/>
         </scene>

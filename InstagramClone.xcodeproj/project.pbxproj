@@ -26,6 +26,7 @@
 		9E0D199C18A071F900F7CFDC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D199A18A071F900F7CFDC /* Model.xcdatamodeld */; };
 		9E0D19E018A1607900F7CFDC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D19DF18A1607900F7CFDC /* MasterViewController.m */; };
 		9E0D19E318A1608D00F7CFDC /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D19E218A1608D00F7CFDC /* SearchTableViewController.m */; };
+		9E0D19E618A1A94700F7CFDC /* CustomPFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D19E518A1A94700F7CFDC /* CustomPFTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		9E0D19DF18A1607900F7CFDC /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
 		9E0D19E118A1608D00F7CFDC /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchTableViewController.h; path = ../SearchTableViewController.h; sourceTree = "<group>"; };
 		9E0D19E218A1608D00F7CFDC /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchTableViewController.m; path = ../SearchTableViewController.m; sourceTree = "<group>"; };
+		9E0D19E418A1A94700F7CFDC /* CustomPFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPFTableViewCell.h; sourceTree = "<group>"; };
+		9E0D19E518A1A94700F7CFDC /* CustomPFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPFTableViewCell.m; sourceTree = "<group>"; };
 		C59AEEDBE1424E62B6F36EEF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +135,8 @@
 				9E0D196818A03F0500F7CFDC /* AppDelegate.h */,
 				9E0D196918A03F0500F7CFDC /* AppDelegate.m */,
 				9E0D196B18A03F0500F7CFDC /* Main.storyboard */,
+				9E0D19E418A1A94700F7CFDC /* CustomPFTableViewCell.h */,
+				9E0D19E518A1A94700F7CFDC /* CustomPFTableViewCell.m */,
 				9E0D199A18A071F900F7CFDC /* Model.xcdatamodeld */,
 				9E0D199418A0422C00F7CFDC /* CameraViewController.h */,
 				9E0D199518A0422C00F7CFDC /* CameraViewController.m */,
@@ -314,6 +319,7 @@
 				9E0D19E018A1607900F7CFDC /* MasterViewController.m in Sources */,
 				9E0D199618A0422C00F7CFDC /* CameraViewController.m in Sources */,
 				9E0D199918A0423B00F7CFDC /* ProfileViewController.m in Sources */,
+				9E0D19E618A1A94700F7CFDC /* CustomPFTableViewCell.m in Sources */,
 				9E0D196618A03F0500F7CFDC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

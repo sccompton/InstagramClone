@@ -78,6 +78,29 @@
 }
 
 
+
+
+//ADD EFFECTS BUTTON?
+//
+//-(void)effects {
+//    //apply sepia filter - taken from the Beginning Core Image from iOS5 by Tutorials
+//    CIImage *beginImage = [CIImage imageWithData: UIImagePNGRepresentation(photo.image)];
+//    CIContext *context = [CIContext contextWithOptions:nil];
+//    
+//    CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone"
+//                                  keysAndValues: kCIInputImageKey, beginImage,
+//                        @"inputIntensity", [NSNumber numberWithFloat:0.8], nil];
+//    CIImage *outputImage = [filter outputImage];
+//    
+//    CGImageRef cgimg = [context createCGImage:outputImage fromRect:[outputImage extent]];
+//    photo.image = [UIImage imageWithCGImage:cgimg];
+//    
+//    CGImageRelease(cgimg);
+//}
+
+
+
+
 - (IBAction)onSharePhotoButonPressed:(id)sender {
     
     NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
@@ -90,9 +113,12 @@
             // Create a PFObject around a PFFile and associate it with the current user
             PFObject *userPhoto = [PFObject objectWithClassName:@"Photo"];
             [userPhoto setObject:imageFile forKey:@"image"];
+          
             
-            // Set the access control list to current user for security purposes
-            userPhoto.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
+            PFACL *ACL = [PFACL ACLWithUser:[PFUser currentUser]];
+            [ACL setPublicReadAccess:YES];
+            [ACL setWriteAccess:YES forUser:[PFUser currentUser]];
+
             
             PFUser *user = [PFUser currentUser];
             [userPhoto setObject:user forKey:@"user"];
@@ -119,42 +145,8 @@
     }
 
     
-    
-    
-//    PFObject *userPhoto = [PFObject objectWithClassName:@"Photo"];
-//    [userPhoto setObject:imageFile forKey:@"image"];
-//    
-//    PFUser *user = [PFUser currentUser];
-//    [userPhoto setObject:user forKey:@"owner"];
-//    
-//    [userPhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//        if(!error) {
-//            NSLog(@"upload success");
-//        }
-//    }];
-    
 
-    
-    //HUD creation here (see example for code)
-    
-  //    Save PFFile
-//      [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//          if (!error) {
-            // Hide old HUD, show completed HUD (see example for code)
-            
-            // Create a PFObject around a PFFile and associate it with the current user
-//            PFObject *userPhoto = [PFObject objectWithClassName:@"Photo"];
-//            [userPhoto setObject:imageFile forKey:@"image"];
-//            
-//            // Set the access control list to current user for security purposes
-//           // userPhoto.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
-//            
-//            PFUser *user = [PFUser currentUser];
-//            [userPhoto setObject:user forKey:@"owner"];
-    
-//}
-//    
-//      }];
+
 
 
 @end

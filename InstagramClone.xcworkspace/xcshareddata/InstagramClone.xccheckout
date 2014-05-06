@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B48C754B-830F-41C4-99D2-EE82053A8720</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InstagramClone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2F53F4DE-098C-4069-8409-30758AA0CF6F</key>
+		<string>ssh://github.com/sccompton/InstagramClone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>InstagramClone.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2F53F4DE-098C-4069-8409-30758AA0CF6F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/sccompton/InstagramClone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2F53F4DE-098C-4069-8409-30758AA0CF6F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2F53F4DE-098C-4069-8409-30758AA0CF6F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InstagramClone</string>
+		</dict>
+	</array>
+</dict>
+</plist>
